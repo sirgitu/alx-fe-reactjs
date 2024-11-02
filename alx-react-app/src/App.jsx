@@ -28,5 +28,49 @@ function App() {
     </>
   );
 }
+import React from 'react';
+import Header from './Header';
+import MainContent from './MainContent';
+import Footer from './Footer';
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+import React from 'react';
+
+function Main() {
+  return (
+    <main>
+      <p>I love to visit New York, Paris, and Tokyo.</p>
+    </main>
+  );
+}
+
+import React from 'react';
+
+function Header() {
+  return (
+    <header>
+      <h1>My Favorite Cities</h1>
+    </header>
+  );
+}
+
+import React from 'react';
+
+function Footer() {
+  return (
+    <footer>
+      <p>© 2023 City Lovers</p>
+    </footer>
+  );
+}
 
 export default App;
