@@ -1,4 +1,4 @@
-import WelcomeMessage from './WelcomeMessage
+import WelcomeMessage from './WelcomeMessage'
 function App() {
   const [count, setCount] = useState(0);
 
@@ -70,6 +70,23 @@ function Footer() {
     <footer>
       <p>© 2023 City Lovers</p>
     </footer>
+  );
+}
+
+import React from 'react';
+import Header from './Header';
+import MainContent from './MainContent';
+import Footer from './Footer';
+import UserProfile from './components/UserProfile'; // Import UserProfile
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />  // Use UserProfile with props
+      <Footer />
+    </div>
   );
 }
 
